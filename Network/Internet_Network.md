@@ -19,7 +19,7 @@ IP(인터넷 프로토콜)은 멀리 있는 서버/클라이언트와 통신하�
 우선 프로토콜 계층은 다음과 같이 구성되어 있습니다.  
 ![protocol](images/protocol.jpg)
 
-TCP 정보에는 출발지 port, 목적지 port, 전송 제어, 순서, 검증 정보 등 들어 있으며,
+TCP 정보에는 출발지 port, 목적지 port, 전송 제어, 순서, 검증 정보 등 들어 있으며,  
 TCP 세그먼트 덕에 신뢰할 수 있는 protocol로 진화할 수 있었습니다.
 <br/><br/>
 ### TCP (Transmission Control Protocol)
@@ -34,14 +34,18 @@ TCP 특징으로는 **3-Way handshake**로 데이터 전달 보장은 물론이�
 
 _체크섬? 메시지가 제대로 왔는지 검증해주는 역할_  
 
-하지만 단순하고 빨라 최근(HTTP/3)에서 각광받고 있다고 합니다. (Web browser에서 HTTP 통신시 TCP 3-way handshake가 갖는 시간조차 아까운..!)  
-(우리에게는 HTTP/1.1가 가장 많이 사용되며 중요한 버전입니다.)
+하지만 단순하고 빨라 최근(HTTP/3)에서 각광받고 있다고 합니다.  
+(Web browser에서 HTTP 통신시 TCP 3-way handshake가 갖는 시간조차 아까운..!)  
+참고로, 우리에게는 HTTP/1.1가 가장 많이 사용되며 중요한 버전입니다.
 
+<br/>
 
-###Port
+### Port
 같은 IP내에서 프로세스 구분해주는 역할  
 _IP가 아파트면 PORT는 동호수로 생각하면 됩니다._ 
 
-###DNS (Domain Name System)
+<br/>
+
+### DNS (Domain Name System)
 일종의 _전화번호부_ 같은 역할로, 도메인 명을 IP주소로 변환해줍니다.  
 도메인 명을 보내면 DNS 서버는 IP주소로 응답해줍니다. 우리는 이 IP주소를 통해 서버에 접속합니다.

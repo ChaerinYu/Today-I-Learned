@@ -44,3 +44,4 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## Operating System
 ## Spring
 ## Other
+- [SOLID 좋은 객체 지향 설계 원칙](Z_Others/SOLID.md)

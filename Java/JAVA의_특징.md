@@ -107,7 +107,8 @@ GC를 이용하여 메모리 관리를 하는 Stack 기반의 가상머신입니
 
 * 런타임 데이터 영역(Runtime Data Areas)  
 
-![JVM런타임데이터영역](images/runtime_data_areas.png)
+![JVM런타임데이터영역](images/runtime_data_areas.png)  
+
 JVM이라는 프로그램이 운영체제 위에서 실행되면서 할당받는 메모리 영역입니다.  
 총 6개의 영역으로 나눌 수 있는데, 
 PC레지스터, JVM 스택, 네이티브 메서드 스택은 **스레드 하나씩 생성**되며  

@@ -47,6 +47,8 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Internet Network](Network/Internet_Network.md)
 - [URL](Network/url.md)
 - [HTTP](Network/HTTP.md)
+- [Redirect와 Forward](Network/redirect_vs_forward.md)
+- [Cookie와 Session](Network/cookie_vs_session.md)
 ## Operating System
 ## Spring
 - [Spring DI/Ioc, Container](Spring/Spring_DI_IoC.md)

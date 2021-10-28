@@ -1,10 +1,12 @@
 # Spring DI/IoC 
 
-## DI(Dependency Injection) 의존관계 주입
+* Spring 의 특징
+## 1. DI(Dependency Injection) 의존관계 주입
 애플리케이션 실행 시점(런타임)에 외부에서 실제 구현 객체를 생성하고 클라이언트에 전달해서 클라이언트와 서버의 실제 의존관계가 연결되는 것  
 
+- [Spring Bean 설정하는 방법](Spring_setting_Bean.md)
 
-## IoC (Inversion of Control) 제어의 역전
+## 2. IoC (Inversion of Control) 제어의 역전
 프로그램의 제어 흐름에 대한 권한을 스프링 컨테이너(@Configuration)가 해준다.  
 👉 객체 관계가 좀 더 느슨해짐(loose coupling)  
 ### IoC 구현 방법
@@ -18,7 +20,7 @@ Naming Exception 처리 로직 필요하다.
 오브젝트는 컨테이너의 존재 여부를 알 필요 없다.  
 
 <br/><br/>
-## Container 컨테이너 
+## 3. Container 컨테이너 
 * 객체의 생성, 사용, 소멸 등 라이프 사이클 관리  
 * Dependency 객체 제공 (의존관계 연결)  
 * Thread 관리  
@@ -36,6 +38,8 @@ _IoC컨테이너, DI 컨테이너, 어샘블러, 오브젝트 팩토리_ 등 불
 
 ### 빈(Bean)
 스프링이 IoC방식으로 관리하는 오브젝트.
+* Life Cycle
+  > Bean 생성 → DI → init-method 실행 → Bean 사용(로직처리) → destroy-method 실행 → Bean 소멸
 
 ### 빈 팩토리(BeanFactory)
 스프링이 IoC를 담당하는 핵심 컨테이너  

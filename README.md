@@ -9,7 +9,7 @@ Challenge 공부 기록장
 
 --- 
 
-_잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
+_잘못된 내용은 지적해주시면 감사하겠습니다._ 👏  
 
 </div>
 <br/>
@@ -39,6 +39,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [List, Set 그리고 Map](DataStructure/List_vs_Set_vs_Map.md)
 - [Stack과 Queue](DataStructure/Stack_vs_Queue.md)
 ## FrontEnd
+- [DOM](FrontEnd/DOM.md)
 ## Java
 - [JAVA의 특징](Java/JAVA의_특징.md)
 ## JavaScript
@@ -52,5 +53,16 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## Operating System
 ## Spring
 - [Spring DI/Ioc, Container](Spring/Spring_DI_IoC.md)
+- [Spring Bean 설정하는 방법](Spring_setting_Bean.md)
 ## Other
 - [SOLID 좋은 객체 지향 설계 원칙](Z_Others/SOLID.md)
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+###### 설명에 사용된 이미지들은 제가 직접 만든 이미지입니다. 😂

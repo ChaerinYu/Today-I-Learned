@@ -109,6 +109,7 @@ _POST는 멱등이 아니다._
   * 401 Unauthorized: 인증이 필요함
   * 403 Forbidden: 서버의 승인 거부. 접근 권한 불충분 (일반 사용자가 운영자 메뉴 접근할 때)
   * 404 Not Found: 요청 리소스가 서버에 없음 (보통 개발할 때에는 오타 때문에 많이 발생)
+  * 405 METHOD_NOT_ALLOWED: 잘못된 HTTP Method로 요청함
 * 5xx: Server 오류
   * 500 Internal Server Error: 서버 내부 문제
   * 503 Service Unavailable: 서비스 이용 불가 (과부하 또는 예정 작업 진행으로 인한 이용 불가능)

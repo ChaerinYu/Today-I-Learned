@@ -60,8 +60,8 @@ public class LoggingAspect {
 공통 기능의 코드를 뜻한다.  
 * weaving (위빙)  
 : point cut으로 지정한 핵심 관심 메소드가 호출될 때, advice에 해당하는 공통로직이 삽입되는 과정이다.  
-  * 시점에 따라 위빙 처리 방식이 나뉜다. 
-    - 컴파일 타임 위빙/로딩타임 위빙/런타임 위빙 (Spring 지원)
+  * 시점에 따라 위빙 처리 방식이 나뉜다.  
+    - 컴파일 타임 위빙/로딩타임 위빙/런타임 위빙 (Spring 지원)   
 * Advice 동작 시점  
   ![AOP](images/aop.png)
   * `@Before`: 메소드 실행 전

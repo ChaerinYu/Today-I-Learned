@@ -46,7 +46,7 @@ HTTP-message = start-line
               [ message-body ]
 ```
 
-### 1. stat-line
+### 1. start-line
 > |HTTP 메서드| |요청 대상| |HTTP version|   
 
 ### 2. header-field
@@ -58,7 +58,7 @@ field-value는 띄어써도 상관 없다.
 
 HTTP 전송에 필요한 모든 부가정보(브라우저 정보 등)를 갖고 있다. 필요시 임의의 헤더도 추가 가능하다.  
 
-### 3. message-bdy
+### 3. message-body
 실제 전송할 데이터로 HTML, 이미지, 영상, JSON 등 byte로 표현 가능한 모든 데이터 전송 가능하다.  
 
 

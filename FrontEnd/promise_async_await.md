@@ -65,6 +65,6 @@ print(); // hello 찍힌 후 1초 뒤 world가 찍힌다.
 
 <br/><br/>
 
-[참고 :yt: ](https://www.youtube.com/watch?v=wvEYG6ydAGg)
+[참고](https://www.youtube.com/watch?v=wvEYG6ydAGg)
 
 

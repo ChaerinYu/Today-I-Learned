@@ -19,7 +19,7 @@ cookie는 client가 저장하고 있습니다.
 브라우저 실행동안 브라우저 실행 메모리에 저장됩니다.  
 
 * 브라우저는 request 시, request header에 cookie를 넣어 자동으로 server에 전송합니다. 
-* key, value 형태로 구성된 string 형태입니다.
+* key-value 형태로 저장된 문자열 파일입니다.
 * cookie는 도메인 별로 유지되며 관리됩니다. _네이버에서 사용된 쿠키를 다음에서 사용하지 않죠!_
 * cookie에는 key, value, expires, domain, path .. 가 저장됩니다.
 
@@ -32,6 +32,10 @@ cookie는 client가 저장하고 있습니다.
 1. 사용자가 조회, 수정, 삭제할 수 있습니다. 보안에 취약!
 2. 브라우저에서 쿠키를 차단할 경우, 쿠키를 사용할 수 없습니다. 😱
 
+### 사용 예
+- 로그인할 때, "아이디와 비밀번호를 저장하시겠습니까?" → 아이디, 비밀번호 자동 완성
+- 쇼핑몰의 장바구니 기능
+- "오늘은 더 이상 이 창을 보지 않음" 체크 → 다음 날 다시 체크해야 함
 
 ## Session  
 
@@ -64,7 +68,7 @@ session.invalidate();
 | |Cookie|Session|
 |:----:|-----|-----|
 |저장위치|client|server|
-|저장형태|key, value 형태의 string|object|
+|저장형태|key-value 형태의 문자열 파일|key-value로 이루어진 object|
 |크기|용량이 제한적이다.|server 허용량까지 가능. cookie보다 크다.|
 |보안|사용자가 직접 수정, 삭제 가능하여 보안이 나쁘다.|사용자가 직접 수정, 삭제할 수 없어 cookie보다 보안이 좋다.|
 

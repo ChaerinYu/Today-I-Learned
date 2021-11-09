@@ -14,7 +14,7 @@ callback 함수 인자를 넘길 때 제어권도 같이 위임된다.
 →  `Promise`, `async`, `await`
 
 ## Promise
-ES6에 추가된 JS 내장객체  
+ES6에 추가된 JS 내장객체로 비동기 처리에 사용되는 객체  
 > new Promise(executor)   
 
 promise를 생성할 때, `executor`라는 매개변수를 받는다.  

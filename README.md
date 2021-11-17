@@ -74,6 +74,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## Other
 - [SOLID 좋은 객체 지향 설계 원칙](Z_Others/SOLID.md)
 - [과부하 발생 시, 어떻게 대응할 건지](Z_Others/Traffic_overload.md)
+- [Git을 쓰는 이유와 Git과 Github의 차이점](Z_Others/Git.md)
 
 
 

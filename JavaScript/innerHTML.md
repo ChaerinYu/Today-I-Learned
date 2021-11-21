@@ -37,7 +37,7 @@ element.insertAdjacentHTML( position, text );
 // position에는 4 종류가 있다. -> beforebegin, afterbegin, beforeend, afterend
 ```
 innerHTML의 단점을 보완하기 위해 만들어졌다.    
-![insertAdjacentHTML](images/insertAdjacentHTML.png)
+![insertAdjacentHTML](images/insertAdjacentHTML.PNG)
 - 장점
   - 기존 요소 제거하지 않고 위치 지정하여 추가 가능하다.
   - innerHTML보다 빠르다.

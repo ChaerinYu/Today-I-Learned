@@ -34,6 +34,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 
 ## Algorithm
 - [DFS와 BFS](Algorithm/DFS_and_BFS.md)
+- [Merge Sort: 합병정렬](Algorithm/merge_sort.md)
 
 ## ComputerScience
 - [Cache](CS/Cache.md)

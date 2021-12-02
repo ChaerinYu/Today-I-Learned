@@ -19,7 +19,7 @@
 * 원시 값에는 7종류가 있다. `string`, `number`, `bigint`, `boolean`, `undefined`, `symbol`, `null`  
 * 모든 원시 값은 불변하다.  
 
-``` html
+``` javascript
 // 문자열 메서드는 문자열을 변형하지 않는다.
 var bar = "hello";
 console.log(bar); // hello

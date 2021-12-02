@@ -56,7 +56,8 @@ _John von Neumann_
 |Merge Sort|Quick Sort|
 |---|---|
 |영역을 쪼갤 수 있는 만큼 쪼갠 후 합병하며 정렬한다.|pivot을 통해 우선 정렬한 후, 영역을 쪼갠다.|
-|순차접근|임의접근|
+|순차접근|임의접근|  
+
 👉 LinkedList 정렬시, Quick Sort보다는 Merge Sort가 더 좋다.  
 
 

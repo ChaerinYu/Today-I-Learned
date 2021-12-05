@@ -4,7 +4,7 @@ _John von Neumann_
 * `안정 정렬`   
 > **안정 정렬**  
 > 중복된 값을 입력 순서와 동일하게 정렬. (정렬하기 전/후 순서가 유지된다.)  
-> 대표적으로 `삽입정렬(insertion sort)`, `병합정렬(merge sort)`, `버블정렬(bubble sort)`이 있다.  
+> 대표적으로 `삽입정렬(insertion sort)`, `합병정렬(merge sort)`, `버블정렬(bubble sort)`이 있다.  
 > _불안정 정렬은 중복된 값이 입력 순서와 동일하지 않게 정렬. 대표적으로 `퀵정렬(quick sort)`, `선택정렬(selection sort)` 등_
 
 * `분할 정복 알고리즘(divide and conquer)`  
@@ -51,6 +51,53 @@ _John von Neumann_
   * 순환 호출의 깊이 만큼의 합병 단계 * 각 합병 단계의 이동 연산 = 2nlog₂n
 * nlog₂n(비교) + 2nlog₂n(이동) = 3nlog₂n = O(nlog₂n)
 
+``` java
+private void solve() {
+    int[] array = { 430, 10, 50, 666, 33, 22, 111 };
+ 
+    mergeSort(array, 0, array.length - 1);
+}
+ 
+// 쪼개기
+public static void mergeSort(int[] array, int left, int right) {
+    // 길이가 0 또는 1일 때 까지 작게 분리한다.
+    if (left < right) {
+        int mid = (left + right) / 2;
+ 
+        mergeSort(array, left, mid);
+        mergeSort(array, mid + 1, right);
+        merge(array, left, mid, right);
+    }
+}
+ 
+// 합치기
+public static void merge(int[] array, int left, int mid, int right) {
+    // 쪼개진 값 기준으로 배열 생성
+    int[] L = Arrays.copyOfRange(array, left, mid + 1);
+    int[] R = Arrays.copyOfRange(array, mid + 1, right + 1);
+ 
+    int i = 0, j = 0, k = left;
+    int lLen = L.length, rLen = R.length;
+ 
+    // L과 R 정렬하면서 합치기
+    while (i < lLen && j < rLen) {
+        if (L[i] <= R[j])
+            array[k] = L[i++];
+        else
+            array[k] = R[j++];
+        k++;
+    }
+ 
+    // L에 남은 값들 array로 옮겨주기
+    while (i < lLen) 
+        array[k++] = L[i++];
+    
+    // R에 남은 값들 array로 옮겨주기
+    while (j < rLen) 
+        array[k++] = R[j++];
+}
+
+```
 
 ### Quick sort와의 차이점
 |Merge Sort|Quick Sort|
@@ -67,4 +114,5 @@ _John von Neumann_
 <br/><br/>
 
 
-[참고](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)
+[참고](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)  
+[코드 참고](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Algorithm/MergeSort.md)  

@@ -57,6 +57,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## Java
 - [JAVA의 특징](Java/JAVA의_특징.md)
 - [Overloading & Overriding](Java/Overload_Overriding.md)
+- [Abstract 와 Interface](Java/Abstract_vs_Interface.md)
 
 ## JavaScript
 - [변수 선언 방식: var, let, const](JavaScript/variable.md)

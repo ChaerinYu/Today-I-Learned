@@ -11,5 +11,4 @@ HTTP URI를 통해 제어할 resource(자원)을 명시하고 Http Method를 통
 
 <br/>
 
-
-참고 [HTTP](HTTP.md)
+[HTTP](HTTP.md)

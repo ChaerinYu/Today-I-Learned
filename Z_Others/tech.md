@@ -1,7 +1,8 @@
 
 ## Contents
-* [디지털 트랜스포메이션 digital transformation](#####1)
-* [클라우드 Cloud](#####2)
+* [디지털 트랜스포메이션 digital transformation](#1)
+* [클라우드 Cloud](#2)
+* [Log4J - Log4Shell 제로데이 RCE취약점](#3)
 
 <br/><br/><br/>
 
@@ -106,5 +107,25 @@ FaaS는 임차인이 식사를 할 때 식사할 때 식당에, 잘 때 침실�
 [출처1](https://www.cloudflare.com/ko-kr/learning/cloud/what-is-the-cloud/)  
 [출처2](https://library.gabia.com/contents/infrahosting/9114/)
 
+
+<br/><br/>
+
+##### 3
+## Log4J - Log4Shell 제로데이 RCE취약점
+2021.12.9 알리바바 클라우드 시큐리티 팀이 발견한 취약점이다. 
+
+* 제로데이 취약점
+  * 시스템 결함을 오직 해커만이 알고 있는 경우, 관리자가 고칠 시간이 0일 (제로데이)   
+  👉 ASAP 고쳐야 한다.
+* RCE (Remote Code Execution)
+  * 원격 코드 실행  
+👉 해커 원격으로 마음대로 서버 코드를 수정할 수 있다.  
+
+log4j 의 `jndi lookup` 클래스가 유저가 입력한 값을 백엔드에서 실행하게 만들어서 
+다른 서버 공격도 되고 다른 유저 공격도 되고 DB에 접근하여 사용자 정보를 유출하거나 서버 파일들을 암호화할 수 있다.
+
+
+
+<br/><br/>
 
 

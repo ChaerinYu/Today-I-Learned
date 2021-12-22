@@ -64,6 +64,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [변수 선언 방식: var, let, const](JavaScript/variable.md)
 - [DOM 노드 추가: innerHTML, insertAdjacentHTML, appendChild](JavaScript/innerHTML.md)
 - [JavaScript의 자료형](JavaScript/js_type.md)
+- [React, Next.js, TypeScript](JavaScript/React_TypeScript_nextjs.md)
 
 ## Network
 - [Internet Network](Network/Internet_Network.md)

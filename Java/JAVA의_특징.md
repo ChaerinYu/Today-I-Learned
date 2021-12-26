@@ -37,12 +37,32 @@ new 키워드 실행 시, 변수에는 실제 값을 참조할 수 있는 참조
 
 * **선언 위치에 따른 변수 분류**
 
-|종류|변수종류|선언위치|
-|:---:|:---:|:---:|
-|멤버변수|클래스 멤버 변수|클래스 영역<br/>(static keyword)|
-|멤버변수|인스턴스 멤버 변수|클래스 영역|
-|지역변수|지역 변수|함수내부|
-|지역변수|파라미터 변수|함수 선언부|
+
+<table>
+  <tr>
+    <th></th>
+    <th>변수 종류</th>
+    <th>선언 위치</th>
+  </tr>
+  <tr>
+    <th rowspan="2">멤버변수</th>
+    <td>클래스 멤버 변수</td>
+    <td>클래스 영역<br/>(static keyword)</td>
+  </tr>
+  <tr>
+    <td>인스턴스 멤버 변수</td>
+    <td>클래스 영역</td>
+  </tr>
+  <tr>
+    <th rowspan="2">지역변수</th>
+    <td>지역 변수</td>
+    <td>함수내부</td>
+  </tr>
+  <tr>
+    <td>파라미터 변수</td>
+    <td>함수 선언부</td>
+  </tr>
+</table>
 
 ``` java
 public class Challenge {
@@ -102,7 +122,8 @@ JVM(Java Virtual Machine)은 JRE 위에서 자바 바이트 코드를 동작(해
 _JRE는 자바 API와 JVM으로 구성된다._  
 GC를 이용하여 메모리 관리를 하는 Stack 기반의 가상머신입니다.  
 
-![JVM메모리구조](images/jvm.png)
+![JVM메모리구조](images/jvm.png)  
+
 클래스 로더가 컴파일된 자바 코드를 런타임 데이터 영역(Runtime Data Areas)에 로드하고, 실행 엔진(execution engine)이 자바 바이트 코드를 실행한다.  
 
 * 런타임 데이터 영역(Runtime Data Areas)  

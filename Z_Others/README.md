@@ -6,4 +6,5 @@
 - [Git을 쓰는 이유와 Git과 Github의 차이점](Git.md)
 - [Framework와 Library](Framework_Library.md)
 - [CI/CD](CICD.md)
+- [Singleton 패턴]([DesignPattern]_Singleton.md)
 - [신기술 트렌드](tech.md)

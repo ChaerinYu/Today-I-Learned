@@ -7,4 +7,5 @@
 - [Framework와 Library](Framework_Library.md)
 - [CI/CD](CICD.md)
 - [Singleton 패턴]([DesignPattern]_Singleton.md)
+- [Builder 패턴](builder_pattern.md)
 - [신기술 트렌드](tech.md)

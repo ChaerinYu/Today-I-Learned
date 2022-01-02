@@ -1,5 +1,5 @@
 # Merge Sort (합병 정렬)
-_John von Neumann_
+_존 폰 노이만(John von Neumann)_  
 
 ### ✔ 요약
 > 정렬되지 않은 리스트를 각각 하나의 원소만 포함하는 n개의 부분리스트로 분할 후, 
@@ -128,3 +128,11 @@ public static void merge(int[] array, int left, int mid, int right) {
 
 [참고](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html)  
 [코드 참고](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Algorithm/MergeSort.md)  
+
+<br/>
+<br/>
+
+#### 참고하면 좋을 merge sort 코드
+* [임시배열 1가지](https://velog.io/@roro/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%95%A9%EB%B3%91%EB%B3%91%ED%95%A9%EC%A0%95%EB%A0%AC)  
+* [LinkedList로 구현](https://ldgeao99.tistory.com/375)
+* [LinkedList로 구현-언어별](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)

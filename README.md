@@ -92,6 +92,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [CI/CD](Z_Others/CICD.md)
 - [Singleton 패턴](Z_Others/[DesignPattern]_Singleton.md)
 - [Builder 패턴](Z_Others/builder_pattern.md)
+- [Agile(애자일) 방법론](Z_Others/agile.md)
 - [신기술 트렌드](Z_Others/tech.md)
 
 

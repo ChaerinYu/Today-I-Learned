@@ -8,4 +8,5 @@
 - [CI/CD](CICD.md)
 - [Singleton 패턴]([DesignPattern]_Singleton.md)
 - [Builder 패턴](builder_pattern.md)
+- [Agile(애자일) 방법론](agile.md)
 - [신기술 트렌드](tech.md)

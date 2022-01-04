@@ -408,7 +408,7 @@ DID(Decentralized ID: 분산 아이디)는 마이데이터의 기능의 대부�
 
 ### ✔ 요약
 > 디지털서비스는 인터넷을 통해 서비스를 임대/제공하는 클라우드 기반 서비스이다.  
-> IT서비스는 고객 요구사항을 기반으로 정보기술과 산업 업무지식을 융합한 서비스이다.
+> IT서비스는 정보기술을 기반으로 기존산업과 융합화하여 새로운 서비스를 창출하는 서비스이다.
 
 ### 디지털서비스
 * 원격근무, 화상교육·회의, 인공지능(AI) 데이터 분석 등 **인터넷을 통해 서버·소프트웨어 등을 임대·제공하는 서비스 클라우드 기반 서비스**
@@ -419,7 +419,7 @@ DID(Decentralized ID: 분산 아이디)는 마이데이터의 기능의 대부�
     * 원활한 비대면 업무를 위해 원격근무, 화상회의 등 클라우드 기반 서비스 이용
 
 ### IT서비스
-* 고객 요구사항을 기반으로 정보기술과 산업 업무지식을 융합한 산업
+* 고객 요구사항을 기반으로 정보기술과 산업 업무지식을 융합한 서비스
   * 정보시스템의 기획(컨설팅)에서부터 설계, 구축, 실제 운영까지 모든 과정상의 서비스를 제공
   * 공급 구조는 주계약자를 중심으로 SI기업, SW공급기업, HW공급기업, IT컨설팅, 하도급 기업 등으로 구성
     * 소프트웨어와 하드웨어 설치, 네트워크 통합작업을 의미하는 'SI(시스템통합)' 
@@ -434,8 +434,8 @@ DID(Decentralized ID: 분산 아이디)는 마이데이터의 기능의 대부�
 
 
 [참고1](https://blog.naver.com/ppspr/222009721940)   
-[참고2](https://www.digitalmarket.kr/web/board/BD_board.view.do?domainCd=2&bbsCd=1030&bbscttSeq=20210729153002333&registPassword=Y&othbcAt=Y)
-[참고3](https://www.digitalmarket.kr/web/board/BD_board.view.do?domainCd=2&bbsCd=1030&bbscttSeq=20210930095956927&registPassword=Y&othbcAt=Y)
+[참고2](https://www.digitalmarket.kr/web/board/BD_board.view.do?domainCd=2&bbsCd=1030&bbscttSeq=20210729153002333&registPassword=Y&othbcAt=Y)  
+[참고3](https://www.digitalmarket.kr/web/board/BD_board.view.do?domainCd=2&bbsCd=1030&bbscttSeq=20210930095956927&registPassword=Y&othbcAt=Y)  
 
 
 

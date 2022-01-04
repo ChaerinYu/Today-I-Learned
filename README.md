@@ -45,6 +45,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [index](Database/index.md)
 - [SQL](Database/SQL.md)
 - [RDBMS와 NoSQL](Database/RDBMS_NoSQL.md)
+- [정규화 Normalization](Database/normalization.md)
 
 ## DataStructure
 - [Array와 LinkedList](DataStructure/Array_vs_LinkedList.md)

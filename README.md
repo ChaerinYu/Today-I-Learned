@@ -97,6 +97,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Redirect와 Forward](Network/redirect_vs_forward.md)
 - [Cookie와 Session](Network/cookie_vs_session.md)
 - [REST](Network/REST.md)
+- [Web Server와 WAS](Network/webserver_vs_was.md)
 
 
 [🔼위로](#contents)

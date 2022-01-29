@@ -30,21 +30,42 @@
 <br>
 <br>
 
-![SpringMVC](images/spring_mvc.png)
+![SpringMVC](images/spring_mvc.png)  
 
 * **DispatcherServlet** (Front Controller)  
-모든 클라이언트의 요청을 전달 받는다. 컨트롤러에게 클라이언트의 요청을 전달하고 컨트롤러가 리턴한 결과 값을 view에 전달하여 알맞은 응답을 생성한다.  
+  * 모든 클라이언트의 요청을 전달 받는다. 
+    컨트롤러에게 클라이언트의 요청을 전달하고 컨트롤러가 리턴한 결과 값을 view에 전달하여 알맞은 응답을 생성한다.  
 * **HandlerMapping**  
-클라이언트의 요청 url을 어떤 컨트롤러가 처리할지 결정한다.  
-DispatcherServlet은 하나 이상의 Handler Mapping을 갖는다. 
+  * 요청에 따라 적절한 Controller를 찾는다.  
+    * 클라이언트의 요청 url을 어떤 컨트롤러가 처리할지 결정한다.
+    * 찾는 방법은 Spring Framework에서 제공한다.
+  * DispatcherServlet은 하나 이상의 Handler Mapping을 갖는다. 
 * **Controller**  
-클라이언트의 요청을 처리한 뒤 model을 호출하고 그 결과를 DispatcherServlet에게 알려준다.  
-리턴되는 데이터는 보통 컨트롤러가 처리한 데이터와 화면에 대한 정보를 갖고 있다. 
+  * 클라이언트의 요청을 처리한 뒤 model을 호출하고 그 결과를 DispatcherServlet에게 알려준다.  
+  * 리턴되는 데이터는 보통 컨트롤러가 처리한 데이터와 화면에 대한 정보를 갖고 있다. 
+    * 보통 view의 논리적인 이름`String`만 리턴해준다.
 * **View Resolver**  
-Controller가 리턴한 뷰 이름을 기반으로 컨트롤러의 처리 결과를 보여줄 view를 결정합니다. 
+  * Controller가 리턴한 view 이름을 기반으로 컨트롤러의 처리 결과를 보여줄 view를 결정합니다. 
 * **View**  
-컨트롤러의 처리 결과를 보여줄 응답화면을 생성합니다. 
+  * 컨트롤러의 처리 결과를 보여줄 응답화면을 생성합니다. 
 
 
+### Servlet과의 차이점
+* Servlet
+  * 웹 어플리케이션을 만들 때 필요한 인터페이스
+  * url마다 servlet을 생성하여 `web.xml`로 servlet을 관리한다.
+  * servlet에서 `view`를 직접 만들었음
+* Spring Web MVC
+  * Spring Framework에 있는 모듈을 이용하여 MVC 패턴을 적용한 Web Service  
+  * Servlet을 사용한다. (DispatcherServlet)
+    * 모든 요청이 `DispatcherServlet`으로 간다.  
+  * servlet은 `DispatcherServlet` 1개 뿐
+  * `view` 분리 가능해짐
 
+
+<br><br>
+<br><br>
+
+
+[Servlet vs Spring - 보면 좋은 자료](https://www.youtube.com/watch?v=2pBsXI01J6M)
 

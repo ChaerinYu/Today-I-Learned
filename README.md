@@ -68,6 +68,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## DesignPattern
 - [Singleton 패턴](DesignPattern/[DesignPattern]_Singleton.md)
 - [Builder 패턴](DesignPattern/builder_pattern.md)
+- [Proxy 패턴](DesignPattern/proxy_pattern.md)
 
 [🔼위로](#contents)
 
@@ -81,10 +82,10 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 
 
 ## Infra
-- [Git을 쓰는 이유와 Git과 Github의 차이점](Z_Others/Git.md)
-- [CI/CD](Z_Others/CICD.md)
-- [Docker 도커](Z_Others/Docker.md)
-- [Kubernetes 쿠버네티스 k8s](Z_Others/Kubernetes.md)
+- [Git을 쓰는 이유와 Git과 Github의 차이점](Infra/Git.md)
+- [CI/CD](Infra/CICD.md)
+- [Docker 도커](Infra/Docker.md)
+- [Kubernetes 쿠버네티스 k8s](Infra/Kubernetes.md)
 
 [🔼위로](#contents)
 
@@ -139,12 +140,8 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 ## Other
 - [SOLID 좋은 객체 지향 설계 원칙](Z_Others/SOLID.md)
 - [과부하 발생 시, 어떻게 대응할 건지](Z_Others/Traffic_overload.md)
-- [Git을 쓰는 이유와 Git과 Github의 차이점](Z_Others/Git.md)
 - [Framework와 Library](Z_Others/Framework_Library.md)
-- [CI/CD](Z_Others/CICD.md)
 - [Agile(애자일) 방법론](Z_Others/agile.md)
-- [Docker 도커](Z_Others/Docker.md)
-- [Kubernetes 쿠버네티스 k8s](Z_Others/Kubernetes.md)
 - [신기술 트렌드](Z_Others/tech.md)
 
 

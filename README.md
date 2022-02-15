@@ -21,6 +21,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [ComputerScience](#CS)
 - [Database](#Database)
 - [DataStructure](#DataStructure)
+- [DesignPattern](#DesignPattern)
 - [FrontEnd](#FrontEnd)
 - [Java](#Java)
 - [JavaScript](#JavaScript)
@@ -64,13 +65,29 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 
 [🔼위로](#contents)
 
+## DesignPattern
+- [Singleton 패턴](DesignPattern/[DesignPattern]_Singleton.md)
+- [Builder 패턴](DesignPattern/builder_pattern.md)
+
+[🔼위로](#contents)
+
+
 ## FrontEnd
 - [DOM](FrontEnd/DOM.md)
 - [Promise와 Async/Await](FrontEnd/promise_async_await.md)
 - [SPA (Single Page Application)](FrontEnd/SPA.md)
 
+[🔼위로](#contents)
+
+
+## Infra
+- [Git을 쓰는 이유와 Git과 Github의 차이점](Z_Others/Git.md)
+- [CI/CD](Z_Others/CICD.md)
+- [Docker 도커](Z_Others/Docker.md)
+- [Kubernetes 쿠버네티스 k8s](Z_Others/Kubernetes.md)
 
 [🔼위로](#contents)
+
 
 ## Java
 - [JAVA의 특징](Java/JAVA의_특징.md)
@@ -125,8 +142,6 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Git을 쓰는 이유와 Git과 Github의 차이점](Z_Others/Git.md)
 - [Framework와 Library](Z_Others/Framework_Library.md)
 - [CI/CD](Z_Others/CICD.md)
-- [Singleton 패턴](Z_Others/[DesignPattern]_Singleton.md)
-- [Builder 패턴](Z_Others/builder_pattern.md)
 - [Agile(애자일) 방법론](Z_Others/agile.md)
 - [Docker 도커](Z_Others/Docker.md)
 - [Kubernetes 쿠버네티스 k8s](Z_Others/Kubernetes.md)

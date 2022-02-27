@@ -1,5 +1,5 @@
 
-# Dependency Injection
+# Dependency Injection (DI)
 
 Spring Framework는 Java 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크로 IoC, DI, AOP 특징을 갖고 있습니다.  
 그 중 DI(Dependency Injection)에 대해서 설명해보려 합니다.  
@@ -10,7 +10,8 @@ Dependency Injection을 우리나라 말로 풀어쓰면 `의존 주입`이라�
 
 ### 여기서의 `의존`이라는 건 무슨 의미일까요? 🤔  
 한 클래스가 다른 클래스의 메서드를 실행할 때 이를 `의존`한다고 표현합니다.  
-예를 들어, Service 클래스에서 DB 처리를 위해 Dao 클래스의 메서드를 사용한다고 하면, "Service 클래스가 Dao 클래스에 의존한다"고 표현할 수 있습니다.  
+예를 들어, Service 클래스에서 DB 처리를 위해 Dao 클래스의 메서드를 사용한다고 하면,  
+"Service 클래스가 Dao 클래스에 의존한다"고 표현할 수 있습니다.  
 
 의존하는 대상이 있으면 그 대상을 구하는 방법이 필요합니다.  
 가장 쉬운 방법으로는 의존대상 *객체를 직접 생성하는 것*입니다.
@@ -25,6 +26,7 @@ public class XXXService {
 
 이런 경우, `XXXService` 객체를 생성하는 순간에 `XXXDao` 객체도 함께 생성됩니다.  
 클래스 내부에서 직접 의존 객체 생성하는 것이 쉽긴 하지만 유지보수 관점에서 문제점을 유발할 수 있습니다.  
+*(의존하는 객체가 변경되거나 혹은 기능을 추가하게 된다면 사용하는 코드를 모두 변경해야 하는 문제 등 자잘한 문제들이 있습니다.)*
 
 이렇게 직접 생성하는 방식 이외 의존 객체를 구하는 또 다른 방법이 있습니다.  
 이 방법이 `DI` 와 `서비스 로케이터` 입니다.  
@@ -76,6 +78,7 @@ public class UserServiceImpl implements UserService {
 public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	
+	// @Autowired 생략
 	public UserServiceImpl(UserRepository userRepository) {
 		this.userRepository = userRepository;
 	}
@@ -134,6 +137,7 @@ public class UserServiceImpl implements UserService {
 ### 1. 객체 불변성 확보
 - 대부분 의존 관계 주입은 어플리케이션 종료시점까지 변경되면 안됩니다. setter의 경우 누군가의 실수로 변경될 가능성이 큽니다.  
   👉 OCP 위배
+  - *OCP(Open/closed principle) : 개방-폐쇄 원칙, 확장에 대해 열려 있어야 하고 수정에 대해서는 닫혀 있어야 한다.*
 - 생성자 주입은 생성할 때 딱 1번만 호출되기 때문에 불변성이 확보됩니다.
 - 불변성이므로 `final` 키워드 설정이 가능합니다.
 
@@ -143,7 +147,6 @@ public class UserServiceImpl implements UserService {
 - 필드 주입의 경우, 테스트 환경은 DI 프레임워크에서 동작되지 않고 순수 자바 코드로 동작하게 됩니다. 그렇기 때문에 NPE 에러가 발생하여 테스트가 불가능합니다.  
 👉 `@SpringBootTest` 어노테이션으로 스프링 컨테이너를 테스트에 통합한 경우에는 가능합니다.
 - 수정자 주입의 경우, 싱글톤 패턴을 해칠 수 있고 OCP 위배 문제가 있습니다.
-  - *OCP(Open/closed principle) : 개방-폐쇄 원칙, 확장에 대해 열려 있어야 하고, 수정에 대해서는 닫혀 있어야 한다.*
 - 생성자 주입의 경우, 의존 관계 주입 누락 시 컴파일 오류가 발생합니다.
   - 어떤 값을 필수로 주입해야 하는 지 확실하게 알 수 있습니다.
   
@@ -153,7 +156,7 @@ public class UserServiceImpl implements UserService {
 ### 3. `final` 키워드 작성 및 Lombok 과의 결합
 - 생성자 주입의 경우, `final` 키워드 사용이 가능합니다. 이는 값 설정 누락 시 컴파일 시점에 오류를 발생하여 누락 확인이 빠릅니다.
   - `final` 키워드: 상수를 만드는 키워드로 한 번 주입한 이후 다른 객체로 변경이 불가능하다.
-- `@RequiredArgsConstructor`: `final`이 붙은 필드들을 모아 생성자를 자동으로 생성해줍니다. 
+- `@RequiredArgsConstructor`: Lombok에서 제공하는 어노테이션으로 `final`이 붙은 필드들을 모아 생성자를 자동으로 생성해줍니다. 
 ``` java
 @Service
 @RequiredArgsConstructor
@@ -166,7 +169,7 @@ public class UserServiceImpl implements UserService {
 
 
 ### 4. 순환참조 에러 방지
-- 필드/수정자 주입의 경우, 서로 순환하며 호출하다가 StackOverFlow 에러 발생할 수 있습니다.
+- 필드/수정자 주입의 경우, 서로 순환하며 호출하다가 StackOverFlowError가 발생할 수 있습니다.
 - 예시로는 닭은 알을 낳고 알은 닭으로 부화되는 circle이 있는 코드입니다.
 ``` java
 // 닭

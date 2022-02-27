@@ -133,6 +133,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Spring Bean 설정하는 방법](Spring/Spring_setting_Bean.md)
 - [AOP](Spring/AOP.md)
 - [Spring MVC](Spring/Spring_MVC.md)
+- [의존관계주입 방법](Spring/how_to_DI.md)
 
 
 [🔼위로](#contents)

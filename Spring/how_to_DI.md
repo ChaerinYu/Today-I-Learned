@@ -207,7 +207,7 @@ public class Egg {
 > 
 > 필드/수정자 주입의 경우
 > - 주입되지 않은 Bean으로 인한 NPE 발생 가능성이 있습니다.
-> - Runtime에 순한참조로 인한 StackOverFlowError 발생 가능성이 있습니다.
+> - Runtime에 순환참조로 인한 StackOverFlowError 발생 가능성이 있습니다.
 
 
 

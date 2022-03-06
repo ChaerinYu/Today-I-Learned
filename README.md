@@ -54,6 +54,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [SQL](Database/SQL.md)
 - [RDBMS와 NoSQL](Database/RDBMS_NoSQL.md)
 - [정규화 Normalization](Database/normalization.md)
+- [MySQL Replication](Database/Replication.md)
 
 
 [🔼위로](#contents)
@@ -119,6 +120,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Cookie와 Session](Network/cookie_vs_session.md)
 - [REST](Network/REST.md)
 - [Web Server와 WAS](Network/webserver_vs_was.md)
+- [OSI 7 계층](Network/OSI_7_Layer.md)
 
 
 [🔼위로](#contents)

@@ -87,8 +87,9 @@
   - html 파싱 완료 여부와 상관없이 스크립트 로딩되면 바로 스크립트 실행한다.
   - `async` 속성의 스크립트 내에서 어떤 html 요소에 접근하는 코드가 있을 때, 해당 html 요소가 파싱되지 않았다면 에러 발생한다.
 
+<br/><br/><br/>
 
-## reflow와 repaint
+## Reflow와 Repaint
 - reflow와 repaint는 DOM 요소가 시각적으로 변경됐을 때, 이 변화를 다시 계산하고 화면에 그려주는 작업이다.
 
 ### Reflow
@@ -107,6 +108,7 @@
 - `background-color`, `visiblity` 수정 등..
 - 개발자도구 Rendering 탭의 Paint flashing 기능: Chrome에서 repaint가 실시간으로 발생하는 부분 하이라이트 해주는 기능
 
+<br/>
 
 ## Reflow와 Repaint 줄이는 방법 🤔
 - 무거운 작업 : Reflow > Repaint
@@ -207,6 +209,6 @@ div.style.display = "block";  // (B)
 그 사이에 아무리 많은 스타일 값을 변경해줘도 총 2번의 reflow, repaint만 발생하게 될것이다.
  
  
-<br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 - [참고](https://kwangsunny.tistory.com/42?category=978480)

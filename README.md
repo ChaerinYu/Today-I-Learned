@@ -79,6 +79,7 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [DOM](FrontEnd/DOM.md)
 - [Promise와 Async/Await](FrontEnd/promise_async_await.md)
 - [SPA (Single Page Application)](FrontEnd/SPA.md)
+- [Browser Rendering - Reflow/Repaint](FrontEnd/browser_rendering.md)
 
 [🔼위로](#contents)
 

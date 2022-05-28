@@ -79,7 +79,7 @@ public class MyConfig {
 
 
 
-하지만 `@Configuration`이 아니라면 Bean이 싱글톤임을 보장받을 수 없으므로 반드시 `@Bean` 사용 시 클래스에 `@Configuration`를 적용합시다!!
+`@Configuration`이 아니라면 Bean이 싱글톤임을 보장받을 수 없으므로 반드시 `@Bean` 사용 시 클래스에 `@Configuration`를 적용합시다!!
 
 
 

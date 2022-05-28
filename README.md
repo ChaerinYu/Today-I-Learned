@@ -150,6 +150,8 @@ _잘못된 내용은 지적해주시면 감사하겠습니다._ 👏
 - [Spring MVC](Spring/Spring_MVC.md)
 - [의존관계주입 방법](Spring/how_to_DI.md)
 - [Filter와 Interceptor와 AOP](Spring/ilter_Interceptor_AOP.md)
+- [Spring Bean 등록 시 사용되는 Annotation 비교(@Bean+@Configration vs. @Component)](Spring/bean_register_annotations.md)
+- [@Bean이 @Configuration안에서 사용되어야 하는 이유](Spring/why_configuration_with_bean.md)
 
 
 [🔼위로](#contents)
